@@ -1,0 +1,27 @@
+apiVersion: mpas.ocm.software/v1alpha1
+kind: Project
+metadata:
+  name: podinfo-application
+  namespace: mpas-system
+spec:
+  flux:
+    interval: 5m0s
+  git:
+    commitTemplate:
+      email: mohammad.ammar@sap.com
+      message: Initializing Project repository
+      name: mpas-admin
+    credentials:
+      secretRef:
+        name: github-access
+    defaultBranch: main
+    existingRepositoryPolicy: adopt
+    interval: 5m0s
+    isOrganization: false
+    owner: mohammad-ammar14
+    provider: github
+    visibility: public
+    domain: https://github.com
+  interval: 1m0s
+  prune: true
+
