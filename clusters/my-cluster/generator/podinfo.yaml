@@ -1,10 +1,11 @@
+---
 apiVersion: mpas.ocm.software/v1alpha1
 kind: ProductDeploymentGenerator
 metadata:
   name: podinfo
   namespace: mpas-podinfo-application
 spec:
-  interval: 1m
+  interval: 5m0s
   serviceAccountName: mpas-podinfo-application
   subscriptionRef:
     name: podinfo-subscription
