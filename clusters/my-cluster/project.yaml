@@ -21,7 +21,7 @@ spec:
     owner: mohammad-ammar14
     provider: github
     visibility: public
-    domain: github.com
+    domain: http://github.com
   interval: 1m0s
   prune: true
 
