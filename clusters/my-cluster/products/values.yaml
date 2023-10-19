@@ -1,4 +1,4 @@
 podinfo:
     message: podinfo
     replicas: 1
-    serviceAccountName: default
+    serviceAccountName: mpas-podinfo-application
