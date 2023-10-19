@@ -1,0 +1,4 @@
+podinfo:
+    message: podinfo
+    replicas: 1
+    serviceAccountName: default
